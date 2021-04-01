@@ -1,0 +1,141 @@
+/* Add your styles here */
+
+#container {
+    position: relative;
+    width: 1400px;
+    height: 120px;
+    margin: auto;
+    margin-top: 230px; 
+}
+.calculator {
+    position: relative;
+    height: 40px;
+    cursor: pointer; 
+    width: 190px;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 16px;
+    -webkit-user-select: none;
+    border-radius: 3%;
+  }
+  .calculator:hover {
+    background-color: #faf5f5;
+  }
+  #display {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  #description {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .tables {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+
+  #containerTable {
+    border: 3px solid;
+    border-color: grey;
+    width: 1350px;
+    height: 420px;
+    position: relative; 
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #containerTable table input {
+    width: 150px;
+    margin-left: 10px;
+  }
+  #settings {
+    float: right;
+    position: relative;
+    height: 40px;
+    cursor: pointer; 
+    width: 190px;
+    margin-top: 5px;
+    margin-right: 15px;
+    font-size: 16px;
+    -webkit-user-select: none;
+    border-radius: 3%;
+  }
+  #cont {
+    display: none;
+    position: fixed;
+    top: 0px;
+    margin-left: -10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 240, 240, 0.5);
+  }
+  
+  #exit {
+    position: absolute;
+    width: 100px;
+    top: 90%;
+    left: 1%;
+    cursor: pointer;
+  }
+  #exitWithout {
+    position: absolute;
+    width: 100px;
+    top: 90%;
+    left: 9.5%;
+    cursor: pointer;
+  }
+  #containerTable table {
+    border-spacing: 7px 11px;
+    font-size: 17px;
+  }
+  #DrTable {
+    margin-bottom: 90px;
+    
+  }
+  #LeoshkiTable {
+    margin-bottom: 295px;
+    
+     
+   }
+   #additionalServices {
+    margin-bottom: 55px;
+    
+  }
+  #inputTable {
+  margin-left: 70%;
+  margin-top: 220px;
+  position: absolute;
+  margin-right: 0px;
+  border-spacing: 7px 11px;
+  font-size: 18px;
+  }
+  #inputTable input {
+    height: 20px;
+    
+  }
+  #inputTable td {
+    width: 200px;
+  }
+  #recount {
+    margin-top: 95px;
+    margin-left: -195px;
+    position: absolute;
+  }
+#currency {
+  position: absolute;
+  margin-top: -250px;
+  margin-left: 1330px;
+  width: 60px;
+  height: 25px;
+  cursor: pointer;
+  background-color:#999799;
+  color: white;
+  font-weight: bold;
+  padding-left: 5px;
+  border-radius: 5%;
+  
+}

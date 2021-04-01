@@ -1,0 +1,294 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+   
+  </head>
+
+  <body>
+    <div id='container'>
+      <div id='description'>
+        Рассчет индивидуальных новогодних туров
+      </div>
+    <form id='calculator'>
+      <select id='currency'>
+        <option value='BYN'>BYN</option>
+        <option value='USD'>USD</option>
+        <option value="RUB">RUB</option>
+        <option value="EUR">EUR</option>
+      </select>
+      <select id='adult' class='calculator'>
+        <option value='0'>Количество взрослых</option>
+        <option value='1'>1 взрослый</option>
+        <option value='2'>2 взрослых</option>
+        <option value='3'>3 взрослых</option>
+        <option value='4'>4 взрослых</option>
+        <option value='5'>5 взрослых</option>
+        <option value='6'>6 взрослых</option>
+        <option value='7'>7 взрослых</option>
+        <option value='8'>8 взрослых</option>
+        <option value='9'>9 взрослых</option>
+        <option value='10'>10 взрослых</option>
+        <option value='11'>11 взрослых</option>
+        <option value='12'>12 взрослых</option>
+        <option value='13'>13 взрослых</option>
+        <option value='14'>14 взрослых</option>
+      </select>
+      <select id='child' class='calculator'>
+        <option value='0'>Количество детей</option>
+        <option value='1'>1 ребенок</option>
+        <option value='2'>2 детей</option>
+        <option value='3'>3 детей</option>
+        <option value='4'>4 детей</option>
+        <option value='5'>5 детей</option>
+        <option value='6'>6 детей</option>
+      </select>
+      <select id='house' class='calculator'>
+        <option value='0'>Вариант проживания</option>
+        <option value='2m1k'>Дривяты(2м1к)</option>
+        <option value='2m2k'>Дривяты(2м2к)</option>
+        <option value='1luks'>Дривяты(1ур люкс)</option>
+        <option value='2luks'>Дривяты(2ур люкс)</option>
+        <option value='1kottageL'>Леошки(1 коттедж)</option>
+        <option value='5kottageL'>Леошки(5 коттедж)</option>
+        <option value='6kottageL'>Леошки(6 коттедж)</option>
+        <option value='3kottageZ'>Золово(3 коттедж)</option>
+        <option value='4kottageZ'>Золово(4 коттедж)</option>
+      </select>
+      <select id='date' class='calculator'>
+        <option value='0'>Даты проживания</option>
+        <option value='2-30-12'>2 суток (30.12-01.01)</option>
+         <option value='2-31-12'>2 суток (31.12-02.01)</option>
+          <option value='3'>3 суток</option>
+          <option value='4'>4 суток</option>
+          <option value='5'>5 суток</option>
+      </select>
+      <select id='discount' class='calculator'>
+        <option value='0'>Скидка проживание</option>
+        <option value='5'>5%</option>
+         <option value='10'>10%</option>
+          <option value='15'>15%</option>
+          <option value='20'>20%</option>
+          <option value='25'>25%</option>
+      </select>
+      <select id='discountAll' class='calculator'>
+        <option value='0'>Скидка весь тур</option>
+        <option value='5'>5%</option>
+         <option value='10'>10%</option>
+          <option value='15'>15%</option>
+          <option value='20'>20%</option>
+          <option value='25'>25%</option>
+      </select>
+      <button id='cancel' class='calculator'>Обновить</button>
+      <button id='settings' >Настройки</button>
+      <table id='inputTable'>
+        <tr>
+          <td>Добавить/убрать завтрак</td>
+          <td><input id='addBreakfast' type='number' value ='0'></td>
+        </tr>
+        <tr>
+          <td>Добавить/убрать обед</td>
+          <td><input id='addDinner' type='number' value ='0'></td>
+        </tr>
+        <tr>
+          <td>Добавить/убрать ужин</td>
+          <td><input id='addSupper' type='number' value ='0'></td>
+        </tr>
+      </table>
+    </form>
+    <div id='display'></div>
+    
+    </div>
+    <div id='cont'>
+    <div id='containerTable'>
+      <div id='LeoshkiTable' class='tables'>
+    <table>
+      <tr>
+        <td>Леошки коттедж №1</td>
+        <td>
+          <input id='lkottage1' type='number'>
+        </td>
+      </tr>
+      <tr>
+        <td>Леошки коттедж №5</td>
+        <td>
+          <input id='lkottage5' type='number'>
+        </td>
+      </tr>
+        <tr>
+          <td>Леошки коттедж №6</td>
+          <td>
+            <input id='lkottage6' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Золово коттедж №3</td>
+          <td>
+            <input id='zkottage3' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Золово коттедж №4</td>
+          <td>
+            <input id='zkottage4' type='number'>
+          </td>
+        </tr>
+      </table>
+      </div>
+      <div id='DrTable' class='tables'>
+      <table>
+        <tr>
+          <td>Дривяты 2м1к (1 гость)</td>
+          <td>
+            <input id='d2m1k1person' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Дривяты 2м1к (2 гостя)</td>
+          <td>
+            <input id='d2m1k2person' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Дривяты 2м2к (1 гость)</td>
+          <td>
+            <input id='d2m2k1person' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Дривяты 2м2к (2 гостя)</td>
+          <td>
+            <input id='d2m2k2person' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Дривяты 2м2к <span style='font-weight: bold'>(доп место)</span></td>
+          <td>
+            <input id='d2m2kAdd' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Дривяты 1ур люкс (1 гость)</td>
+          <td>
+            <input id='d1luks1person' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Дривяты 1ур люкс (2 гостя)</td>
+          <td>
+            <input id='d1luks2person' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Дривяты 1ур люкс <span style='font-weight: bold'>(доп место)</span></td>
+          <td>
+            <input id='d1luksAdd' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Дривяты 2ур люкс (1 гость)</td>
+          <td>
+            <input id='d2luks1person' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Дривяты 2ур люкс (2 гостя)</td>
+          <td>
+            <input id='d2luks2person' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Дривяты 2ур люкс <span style='font-weight: bold'>(доп место)</span></td>
+          <td>
+            <input id='d2luksAdd' type='number'>
+          </td>
+        </tr>
+    </table>
+    </div>
+    <div id='additionalServices' class='tables'>
+      <table>
+        <tr>
+          <td>Завтрак</td>
+          <td>
+            <input id='breakfast' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Обед</td>
+          <td>
+            <input id='dinner' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Ужин</td>
+          <td>
+            <input id='supper' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Новогодний банкет взрослый</td>
+          <td>
+            <input id='banquetAdult' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Новогодний банкет детский</td>
+          <td>
+            <input id='banquetChild' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Развлекательная программа Дривяты</td>
+          <td>
+            <input id='entertainDr' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Развлекательная программа Леошки</td>
+          <td>
+            <input id='entertainLeoshki' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Развлекательная программа Золово</td>
+          <td>
+            <input id='entertainZolovo' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Анимация 1 января Дривяты Взрослый</td>
+          <td>
+            <input id='animnationDr' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Анимация 1 января Дривяты Детский</td>
+          <td>
+            <input id='animnationDrChild' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Анимация 1 января Леошки Взрослый</td>
+          <td>
+            <input id='animationLeoshki' type='number'>
+          </td>
+        </tr>
+        <tr>
+          <td>Анимация 1 января Леошки Детский</td>
+          <td>
+            <input id='animationLeoshkiChild' type='number'>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <button id='exit'>Сохранить и закрыть</button>
+    <button id='exitWithout'>Закрыть без сохранения</button>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="script.js"></script>
+     
+  </body>
+</html>
